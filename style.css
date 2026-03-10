@@ -1,0 +1,45 @@
+/* Color Variables */
+:root {
+    --primary-color: #FFA500;   
+    --secondary-color: #FFFFFF; 
+    --text-dark: #333333;       
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--secondary-color);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+.btn-cta {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 25px;
+    border-radius: 50px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
