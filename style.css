@@ -761,7 +761,7 @@ nav {
     font-family: var(--font-oswald);
     color: var(--primary-color);
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 12px;
 }
 
@@ -781,8 +781,11 @@ nav {
     font-weight: 500;
 }
 
-.reality-cta {
-    text-align: center;
+.btn-center {
+    display: block;      
+    width: max-content;  
+    margin-left: auto;   
+    margin-right: auto;  
 }
 
 .btn-expert {
@@ -798,6 +801,7 @@ nav {
     box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
     transition: 0.3s;
 }
+
 
 .btn-expert:hover {
     transform: scale(1.05);
