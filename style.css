@@ -569,7 +569,6 @@ nav {
     font-weight: bold;
 }
 
-/* রেসপনসিভ */
 @media (max-width: 992px) {
     .services-grid {
         grid-template-columns: 1fr;
@@ -577,5 +576,114 @@ nav {
 
     .section-title {
         font-size: 36px;
+    }
+}
+
+/* OUR APPROACH SECTION */
+.approach-section {
+    padding: 100px 0;
+    background-color: #111111; 
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.approach-container {
+    display: flex;
+    align-items: center;
+    gap: 60px; 
+}
+
+.approach-visual {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.visual-stack {
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.img-large {
+    width: 280px;        
+    object-fit: cover;
+    border-radius: 20px;  
+    z-index: 1;
+}
+
+.img-small {
+    width: 320px;         
+    height: 380px;        
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: -120px; 
+    margin-bottom: -50px;
+    border: 8px solid #111111;
+    z-index: 2;           
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.5); 
+}
+
+.approach-content {
+    flex: 1.2;
+}
+
+.approach-title {
+    font-size: 64px; 
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.approach-details {
+    margin-bottom: 40px;
+    border-left: 2px solid #333; 
+    padding-left: 20px;
+}
+
+.approach-item {
+    margin-bottom: 30px;
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.item-header h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #BBBBBB;
+    max-width: 500px;
+}
+
+.active-item {
+    border-left: 3px solid var(--primary-color);
+    margin-left: -23px;
+    padding-left: 20px;
+}
+
+@media (max-width: 1024px) {
+    .approach-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .visual-stack {
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .img-large { width: 200px; height: 350px; }
+    .img-small { 
+        width: 240px; 
+        height: 280px; 
+        margin-left: -60px; 
+        margin-bottom: -30px; 
     }
 }
