@@ -827,3 +827,103 @@ nav {
         display: none;
     }
 }
+
+/* CALENDER SECTION STYLES */
+.contact-section {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.center-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    width: fit-content;
+    gap: 8px;
+}
+
+.contact-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.contact-header{
+    text-align: center;
+}
+
+.booking-wrapper {
+    max-width: 900px; 
+    margin: 0 auto 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08); 
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.booking-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-footer {
+    margin-top: 30px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: var(--primary-color, #FFA500);
+}
+
+.footer-note {
+    font-size: 14px;
+    color: #333;
+    margin: 0; 
+}
+
+.note-label {
+    color: var(--primary-color, #FFA500);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 36px;
+    }
+    .booking-wrapper {
+        margin: 0 15px 30px;
+    }
+    .footer-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
